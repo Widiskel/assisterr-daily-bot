@@ -1,0 +1,35 @@
+{
+  "name": "assisterr-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Assisterr Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "cp -r accounts app/ && node app/index.js",
+    "dev": "node index.js",
+    "test": "node test.js",
+    "build": "rm -rf app && javascript-obfuscator --config build-config.json"
+  },
+  "keywords": [
+    "assisterr",
+    "assisterr-bot",
+    "assisterr-wallet",
+    "assisterr-telegram"
+  ],
+  "author": "Widiskel",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Widiskel/assisterr-bot.git"
+  },
+  "dependencies": {
+    "input": "^1.0.1",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "twisters": "^1.1.0",
+    "winston": "^3.13.0",
+    "@solana/web3.js": "^1.93.0",
+    "bs58": "^6.0.0",
+    "tweetnacl": "^1.0.3"
+  }
+}
